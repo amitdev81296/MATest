@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% load staticfiles %}
+    <link rel="stylesheet" type="text/css" href="{% static 'StreamAnalysis/css/bootstrap.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'StreamAnalysis/css/bootstrap-theme.css' %}">
+    <script type="text/javascript" src="{% static 'StreamAnalysis/js/bootstrap.js' %}"></script>
+    <script type="text/javascript" src="{% static 'StreamAnalysis/js/npm.js' %}"></script>
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+</head>
+<body>
+    <nav style="border-radius: 0" class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" style="font-family: 'Satisfy', cursive;"  href="#">MATest</a>
+            </div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+        </div>
+    </nav>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
